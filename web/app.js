@@ -7,5 +7,5 @@ handle['/'] = requestHandlers.start;
 handle['/start'] = requestHandlers.start;
 handle['/upload'] = requestHandlers.upload;
 
-
+console.log(handle);
 server.start(router.route,handle);

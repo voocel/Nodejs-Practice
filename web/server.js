@@ -12,7 +12,7 @@ function start(route,handle) {
         }
         console.log(pathname+' 路由已接收');
         const content = route(handle, pathname);
-
+        console.log(content+'----------');
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html;charset=utf-8');
         res.write(content);
